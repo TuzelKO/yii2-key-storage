@@ -1,0 +1,42 @@
+{
+    "name": "tuzelko/yii2-key-storage",
+    "description": "Named cryptographic key storage with format validation for Yii2 framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "security", "crypto", "key", "secrets", "key-management"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene Frost"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0",
+        "yiisoft/yii2": "~2.0",
+        "ext-ctype": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "tuzelko\\yii\\keystorage\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tuzelko\\yii\\keystorage\\tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
